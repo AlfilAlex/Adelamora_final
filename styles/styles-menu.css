@@ -1,0 +1,170 @@
+/* ---------------------- */
+/* ---------------------- */
+/* ---------------------- */
+/* --------mensaje------- */
+/* ---------------------- */
+/* ---------------------- */
+/* ---------------------- */
+
+.cuadro__pedido {
+    width: 300px;
+    height: 60%;
+
+    background-color: rgb(240, 240, 240);
+
+    position: fixed;
+    top: 100px;
+    right: 30px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    row-gap: 2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.cuadro__pedido .cuadro__pedido--ocultar {
+    background-color: rgb(221, 221, 221);
+    width: 15%;
+    height: 5%;
+    text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 15px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+
+}
+.cuadro__pedido .cuadro__pedido--chat {
+    background-color: rgb(255, 255, 255);
+    flex-grow: 1;
+    width: 90%;
+    height: 1fr;
+
+    padding-top: 2  0px;
+}
+.cuadro__pedido--enviar {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+}
+
+#chat--default {
+    color: rgb(189, 189, 189);
+}
+
+.cuadro__pedido--enviar img{
+    margin: auto 0;
+}
+
+.cuadro__pedido--enviar p{
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+
+
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---------------------- */
+/* --------Tarjeta------- */
+/* ---------------------- */
+/* ---------------------- */
+/* ---------------------- */
+
+.tamales {
+    margin-top: 5vh;
+    /* display: flex;
+    justify-content: center;
+    column-gap: 4vw */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 2vw;
+    row-gap: 2vh;
+}
+
+.tamales__tarjeta {
+    height: 400px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-self: center;
+
+    background-color: #fafafa;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.tamales h2 {
+    margin-top: 4vh;
+    /* outline: 5px solid rgb(71, 197, 255); */
+    font-size: clamp(2vh, 4vh, 5vh);
+    grid-column: 1/-1;
+}
+.tamales__tarjeta figure {
+    display: flex;
+    justify-content: center;
+
+    max-height: 150px;
+
+    padding-top: 1vh;
+
+    flex-basis: 100%;
+}
+
+
+.tamales__tarjeta figure img{
+    max-width: 90%;
+    max-height: 30%;
+    object-fit: cover;
+}
+
+
+
+
+.tamales__tarjeta .tamales_tipo {
+    font-size: 35px;
+    flex-basis: 100%;
+    /* outline: 3px solid tomato; */
+
+    text-align: center;
+}
+.tamales__tarjeta p{
+    text-align: center;
+}
+.tamales__tarjeta .tamales__tarjeta--button {
+    margin: 0 auto;
+    padding: 5px;
+    color: #fefefe;
+    border-radius: 1vh;
+}
+
+.agregar {
+    background-color: rgb(108, 179, 49);
+    height: 12%;
+    flex-basis: 70%;
+}
+
+.quitar {
+    background-color: rgb(168, 70, 70);
+    flex-basis: 40%;
+}

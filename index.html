@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamales estilo México</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <!-- ********* -->
+    <!-- Barra de navegación y el logotipo -->
+    <!-- 
+        * Falta agregar una barra de navegación desplegable para cuando sea vista en movil
+        * Cuadrar bien todos los colores, ya que el fondo rosa no es muy llamativo
+    -->
+    <!-- ********* -->
+    <!-- Imagen logotipo -->
+    <header>
+        <figure class="menu__logo">
+            <a href="./index.html"><img src="./img/logo_transparente.png" alt=""></a>
+        </figure>
+    </header>
+    <!-- Barra de navegación -->
+    <nav class="menu">
+        <ul class="menu__lista">
+            <li id="menu__btn"> <a href="./menu.html"> Menú</a></li>
+            <li><a href="m.me/ADelamora.Banquetera">Realizar Orden</a></li>
+            <li><a href="./ubicacion.html">Ubicación</a></li>
+            <li><a href="https://www.facebook.com/ADelamora.Banquetera">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- ********* -->
+    <!-- Contenido principal de la página, incluye la sección de promociones, CTA del menú y redes sociales -->
+    <!-- 
+        * Mejorar los juegos de colores usando la paleta seleccionada
+        * Agregar mejores imagenes de promociones
+        * Cambiar el nombre de las clases por algo más BEM
+        * Agregar links a redes sociales
+    -->
+    <!-- ********* -->
+    <main class="main">
+
+        <!-- Slider de promociones -->
+        <section class="slide-contenedor">
+            <div class="miSlider fade"><img src="./img/promos/promo1.png" alt=""></div>
+            <div class="miSlider fade"><img src="./img/promos/promo2.jpg" alt=""></div>
+            <div class="miSlider fade"><img src="./img/promos/promo3.jpg" alt=""></div>
+            <div class="direcciones">
+                <i href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</i>
+                <i href="#" class="siguiente" onclick="avanzaSlide(1)">&#10095;</i>
+            </div>
+            <div class="barras">
+                <span class="barra active" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+            </div>
+        </section>
+
+        <!-- Sección del menú. Aquí se invita al usuario a ver el menú -->
+        <section class="menu-sect">
+            <div class="menu-sect__block">
+                <div class="menu-sect__blockcontainer">
+                    <h2>
+                        Mira nuestro menú
+                    </h2>
+                    <p>
+                        Tenemos una amplia variedad de tamales estilo México preparados con los sabores tradicionales.
+                        Revisa nuestro menú y realiza tu orden por WhatsApp.
+                    </p>
+                    <button>
+                        <a href="./menu.html">
+                            Ver menú
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="menu-sect__img">
+                <img class="menu_img" src="./img/menu.png" alt="">
+            </div>
+        </section>
+
+        <!-- Redes sociales -->
+        <section class="redes-sociales">
+            <p>Siguenos en nuestras redes sociales</p>
+            <img src="./img/facebook.png" alt="">
+            <img src="./img/instagram.png" alt="">
+            <img src="./img/whatsapp.png" alt="">
+        </section>
+    </main>
+
+    <!-- * -->
+    <!-- Footer. Realmente solo acredita mi trabajo. -->
+    <!-- 
+        *Usar colores de acuerdo a la paleta
+    -->
+    <!-- * -->
+    <footer>
+        <p> Hecho por Alejandro Ochoa Álvarez </p>
+    </footer>
+
+    <!-- * -->
+    <!-- Llamada de los scripts usados -->
+    <!-- * -->
+    <script src="promociones.js"></script>
+
+</body>
+
+</html>
