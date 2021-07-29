@@ -1,0 +1,118 @@
+/* ---------------------------------------- */
+/* || SECCION DE LA BARRA DE NAVEGACIÓN */
+/* 
+    * IMAGEN DEL LOGO
+    * BARRA DE NAVEGACION
+*/
+/* || LOGOTIPO DE ADELAMOTA EN LA PARTE SUPERIOR */
+header {
+    border-top-left-radius: 2rem;
+    background-color: black;
+}
+
+.menu {
+    background-color: black;
+    /* display: grid;
+    grid-template-rows: 2fr 0.5fr; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu__logo {
+    max-height: max-content;
+}
+
+.menu__logo a {
+    max-height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__logo a img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* || BARRA DE NAVEGACION */
+.icono {
+    display: none;
+    cursor: pointer;
+    color: #FEFEFE;
+    font-size: 2rem;
+}
+
+.menu__lista {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu__lista li {
+    list-style: none;
+    color: #FEFEFE;
+    font-size: 25px;
+    margin-left: 4ch;
+    margin-right: 2ch;
+}
+
+.menu__lista li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.7s ease-in-out;
+}
+
+.menu__lista li:nth-child(2) a:hover {
+    color: var(--fk_r);
+}
+
+.menu__lista li:nth-child(3) a:hover {
+    color: var(--fk_ros);
+}
+
+.menu__lista li:nth-child(4) a:hover {
+    color: var(--fk_az);
+}
+
+.fa-bars {
+    color: #FEFEFE;
+}
+
+/* || BOTON DE MENÚ Y HOVER */
+#menu__btn {
+    background-color: #FEFEFE;
+    padding-top: 0.5ch;
+    padding-bottom: 0.5ch;
+    padding-right: 2ch;
+    padding-left: 2ch;
+    border-radius: 5px;
+    margin-right: auto;
+    transition: 0.4s ease-in-out;
+}
+
+#menu__btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--fk_ros);
+    box-shadow: rgba(255, 255, 255, 0.623) 0px 5px 15px;
+}
+
+#menu__btn a {
+    text-decoration: none;
+    color: var(--fk_r);
+    transition: 0.7s ease-in-out;
+}
+
+#menu__btn a:hover {
+    color: var(--fk_ros);
+}

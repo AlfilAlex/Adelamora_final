@@ -1,0 +1,42 @@
+/* ---------------------------------------- */
+/* || SECCION DE REDES SOCIALES */
+/* *** */
+.redes-sociales {
+    height: 200px;
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.redes-sociales>p {
+    font-size: clamp(1vw, 2vw, 3vw);
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.redes-sociales img {
+    max-height: 30%;
+}
+
+
+
+/* ---------------------------------------- */
+/* || FOOTER SECTIION */
+/* *** */
+footer {
+    height: 7vh;
+    background-color: var(--fk_a);
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    width: auto;
+    font-size: 2vh;
+    color: #ffffff;
+}
