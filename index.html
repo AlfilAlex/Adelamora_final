@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamales estilo México</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
@@ -29,9 +28,19 @@
     </header>
     <!-- Barra de navegación -->
     <nav class="menu">
-        <ul class="menu__lista">
+        <div class="icono">
+            <span>&#9776</span>
+        </div>
+        <ul class="menu__lista" id="navmenu-principal">
             <li id="menu__btn"> <a href="./menu.html"> Menú</a></li>
-            <li><a href="m.me/ADelamora.Banquetera">Realizar Orden</a></li>
+            <li><a href="./ubicacion.html">Ubicación</a></li>
+            <li><a href="https://www.facebook.com/ADelamora.Banquetera">Contacto</a></li>
+        </ul>
+        <ul class="menu__lista hidden" id="hidden-menu">
+            <div class="icono">
+                <span>&#9776</span>
+            </div>
+            <li id="menu__btn"> <a href="./menu.html"> Menú</a></li>
             <li><a href="./ubicacion.html">Ubicación</a></li>
             <li><a href="https://www.facebook.com/ADelamora.Banquetera">Contacto</a></li>
         </ul>
@@ -110,6 +119,7 @@
     <!-- Llamada de los scripts usados -->
     <!-- * -->
     <script src="promociones.js"></script>
+    <script src="navbar.js"></script>
 
 </body>
 
