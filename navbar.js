@@ -11,6 +11,4 @@ for (const icon of icons) {
     icon.addEventListener('click', menu_click);
 }
 
-
-
 //

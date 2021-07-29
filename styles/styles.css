@@ -2,6 +2,7 @@
 /* || SECCION DE IMPORTACION DE ELEMENTOS */
 /* */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('./styles-index/navbar.css');
 
 
 
@@ -41,122 +42,10 @@ body {
     * BARRA DE NAVEGACION
 */
 /* || LOGOTIPO DE ADELAMOTA EN LA PARTE SUPERIOR */
-header {
-    border-top-left-radius: 2rem;
-    background-color: black;
-}
-
-.menu {
-    background-color: black;
-    /* display: grid;
-    grid-template-rows: 2fr 0.5fr; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.menu__logo {
-    max-height: max-content;
-}
-
-.menu__logo a {
-    max-height: 20vh;
-    display: flex;
-    justify-content: center;
-}
-
-.menu__logo a img {
-    max-height: 100%;
-    object-fit: contain;
-}
-
-/* || BARRA DE NAVEGACION */
-.icono {
-    display: none;
-    cursor: pointer;
-    color: #FEFEFE;
-    font-size: 2rem;
-}
-
-.menu__lista {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.hidden {
-    display: none;
-}
-
-.menu__lista li {
-    list-style: none;
-    color: #FEFEFE;
-    font-size: 25px;
-    margin-left: 4ch;
-    margin-right: 2ch;
-}
-
-.menu__lista li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: 0.7s ease-in-out;
-}
-
-.menu__lista li:nth-child(2) a:hover {
-    color: var(--fk_r);
-}
-
-.menu__lista li:nth-child(3) a:hover {
-    color: var(--fk_ros);
-}
-
-.menu__lista li:nth-child(4) a:hover {
-    color: var(--fk_az);
-}
-
-.fa-bars {
-    color: #FEFEFE;
-}
-
-/* || BOTON DE MENÚ Y HOVER */
-#menu__btn {
-    background-color: #FEFEFE;
-    padding-top: 0.5ch;
-    padding-bottom: 0.5ch;
-    padding-right: 2ch;
-    padding-left: 2ch;
-    border-radius: 5px;
-    margin-right: auto;
-    transition: 0.4s ease-in-out;
-}
-
-#menu__btn:hover {
-    background-color: rgb(255, 255, 255);
-    color: var(--fk_ros);
-    box-shadow: rgba(255, 255, 255, 0.623) 0px 5px 15px;
-}
-
-#menu__btn a {
-    text-decoration: none;
-    color: var(--fk_r);
-    transition: 0.7s ease-in-out;
-}
-
-#menu__btn a:hover {
-    color: var(--fk_ros);
-}
-
 
 
 /* ---------------------------------------- */
-/* || SECCION DE REDES SOCIALES */
+/* || SECCION DE PROMOS */
 /* */
 .main {
     margin-top: 4vh;
@@ -318,7 +207,7 @@ p {
     font-size: clamp(1vw, 1.5vw, 2.5vw);
 }
 
-.menu-sect__blockcontainer button {
+.button--menu {
     padding: 20px 20px 20px 20px;
     font-size: clamp(1.5rem, 2rem, 4rem);
     color: #FEFEFE;
@@ -328,7 +217,7 @@ p {
     transition: 0.5s ease-in-out;
 }
 
-.menu-sect__block .menu-sect__blockcontainer button:hover {
+.button--menu:hover {
     background-color: var(--fk_ros);
     border-radius: 2.5rem;
 
@@ -338,9 +227,63 @@ p {
     transform: rotate(-15deg);
 }
 
-.menu-sect__blockcontainer button a {
+.button--menu a {
     text-decoration: none;
     color: #fafafa;
+}
+
+
+
+/* ---------------------------------------- */
+/* || SECCION DE REDES SOCIALES */
+/* *** */
+
+.info {
+    padding: 5vh 5vh;
+
+    margin-top: 5vh;
+
+    background-color: rgb(241, 241, 241);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h2 {
+    font-size: 4rem;
+    color: var(--fk_r);
+}
+
+.info .info--content {
+    /* outline: 2px solid rebeccapurple; */
+    font-size: 2rem;
+}
+
+.info--content p {
+    /* outline: 2px solid rgb(153, 51, 122); */
+}
+
+.info--content p span {
+    color: #EB475B;
+}
+
+.info--content ul {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    /* outline: 2px solid rgb(51, 153, 139); */
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    flex-basis: 60%;
+}
+
+.info--content ul li {
+    /* outline: 2px solid rgb(255, 0, 0); */
+    flex-basis: 80%;
+    font-size: 1.5rem;
 }
 
 
@@ -484,7 +427,7 @@ footer p {
         justify-content: center;
     }
 
-    .menu-sect__blockcontainer button {
+    .button--menu {
         margin: 0 auto;
         padding: 10px 10px 10px 10px;
         font-size: clamp(0.8rem, 1rem, 2rem);
