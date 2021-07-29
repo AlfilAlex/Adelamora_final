@@ -235,7 +235,7 @@ p {
 
 
 /* ---------------------------------------- */
-/* || SECCION DE REDES SOCIALES */
+/* || SECCION DE contnt */
 /* *** */
 
 .info {
@@ -246,22 +246,26 @@ p {
     background-color: rgb(241, 241, 241);
     height: 50vh;
     display: flex;
+
+    flex-wrap: wrap;
+
     justify-content: center;
     align-items: center;
 }
 
 .info h2 {
-    font-size: 4rem;
-    color: var(--fk_r);
-}
+    /* font-size: 4rem; */
+    color: #F37335;
+    font-size: clamp(3vw, 3.2vw, 3.5vw);
 
-.info .info--content {
-    /* outline: 2px solid rebeccapurple; */
-    font-size: 2rem;
+    flex-basis: 1;
+
+
 }
 
 .info--content p {
-    /* outline: 2px solid rgb(153, 51, 122); */
+    font-size: clamp(1.5vw, 2vw, 2.5vw);
+    margin: 2vh 2vh;
 }
 
 .info--content p span {
@@ -283,9 +287,13 @@ p {
 .info--content ul li {
     /* outline: 2px solid rgb(255, 0, 0); */
     flex-basis: 80%;
-    font-size: 1.5rem;
+    font-size: clamp(1.5vw, 2vw, 2.5vw);
 }
 
+.btn-info {
+    outline: 2px solid red;
+    margin-left: 0;
+}
 
 
 /* ---------------------------------------- */
@@ -337,7 +345,7 @@ footer p {
 /* || SECCION DEL RESONSIVE - MEDIA QUERIES */
 /* *** */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
 
     /* .menu__lista {
         display: flex;
@@ -430,7 +438,7 @@ footer p {
     .button--menu {
         margin: 0 auto;
         padding: 10px 10px 10px 10px;
-        font-size: clamp(0.8rem, 1rem, 2rem);
+        font-size: clamp(1.5rem, 1.2rem, 2rem);
         color: #FEFEFE;
         background-color: rgb(194, 126, 0);
         border-radius: 1rem;
