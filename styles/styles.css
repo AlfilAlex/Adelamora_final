@@ -43,6 +43,13 @@ body {
 */
 /* || LOGOTIPO DE ADELAMOTA EN LA PARTE SUPERIOR */
 
+/* || BARRA DE NAVEGACION */
+.icono {
+    display: none;
+    cursor: pointer;
+    color: #FEFEFE;
+    font-size: 2rem;
+}
 
 /* ---------------------------------------- */
 /* || SECCION DE PROMOS */
@@ -244,7 +251,9 @@ p {
     margin-top: 5vh;
 
     background-color: rgb(241, 241, 241);
-    height: 50vh;
+    /* height: 70vh; */
+    max-height: 80vh;
+    min-height: max-content;
     display: flex;
 
     flex-wrap: wrap;
@@ -256,7 +265,7 @@ p {
 .info h2 {
     /* font-size: 4rem; */
     color: #F37335;
-    font-size: clamp(3vw, 3.2vw, 3.5vw);
+    font-size: clamp(3vh, 3.2vh, 3.5vh);
 
     flex-basis: 1;
 
@@ -264,7 +273,7 @@ p {
 }
 
 .info--content p {
-    font-size: clamp(1.5vw, 2vw, 2.5vw);
+    font-size: clamp(1.5vh, 2vh, 2.5vh);
     margin: 2vh 2vh;
 }
 
@@ -275,7 +284,7 @@ p {
 .info--content ul {
     margin-top: 2vh;
     margin-bottom: 2vh;
-    /* outline: 2px solid rgb(51, 153, 139); */
+
 
     display: flex;
     justify-content: center;
@@ -285,13 +294,21 @@ p {
 }
 
 .info--content ul li {
-    /* outline: 2px solid rgb(255, 0, 0); */
+
     flex-basis: 80%;
-    font-size: clamp(1.5vw, 2vw, 2.5vw);
+    font-size: clamp(1.5vh, 2vh, 2.5vh);
+}
+
+.info--menu__btn {
+    width: 100%;
+    flex-basis: 1;
+
+    display: flex;
+    justify-content: center;
 }
 
 .btn-info {
-    outline: 2px solid red;
+
     margin-left: 0;
 }
 
@@ -346,32 +363,25 @@ footer p {
 /* *** */
 
 @media screen and (max-width: 990px) {
-
-    /* .menu__lista {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    } */
     #navmenu-principal {
         display: none;
     }
 
-    #hidden-menu {
+    .menu__lista {
         /* display: none; */
         position: fixed;
         top: 80px;
 
-        height: 90vh;
+        height: 100vh;
         width: 80vw;
 
-        /* display: none; */
+        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
 
         transition: all 0.5s ease-in-out;
 
-        background: #FDC830;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #F37335, #FDC830);
         /* Chrome 10-25, Safari 5.1-6 */
@@ -380,10 +390,24 @@ footer p {
 
     }
 
-    .menu__lista>li {
+    .menu__lista li {
         list-style: none;
         color: #FEFEFE;
-        font-size: 60px;
+        font-size: 10vh;
+        margin-left: 3ch;
+        margin-right: 3ch;
+
+        margin: auto;
+
+
+        flex-basis: 1;
+
+    }
+
+    .menu__lista li a {
+        list-style: none;
+        color: #FEFEFE;
+        font-size: 6vh;
         margin-left: 3ch;
         margin-right: 3ch;
 
@@ -401,6 +425,11 @@ footer p {
 
     .icono {
         display: flex;
+
+
+        cursor: pointer;
+        color: #FEFEFE;
+        font-size: 2rem;
     }
 
     .promociones>figure {
@@ -453,34 +482,3 @@ footer p {
         font-size: clamp(1.5vw, 2.5vw, 3vw);
     }
 }
-
-/* @media screen and (max-width: 800px) {
-    .menu__lista>li {
-        list-style: none;
-        color: #FEFEFE;
-        font-size: 15px;
-        margin-left: 3ch;
-        margin-right: 3ch;
-    } 
-
-.menu__logo {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-}
-
-.promociones>figure {
-    width: 100%;
-    height: 300px;
-    object-fit: fill;
-}
-
-.menu-sect__block {
-    background-color: white;
-}
-
-.menu-sect__blockcontainer button {
-    box-shadow: rgba(0, 0, 0, 0.423) 0px 5px 15px;
-    order: -1;
-}
-}*/
