@@ -4,20 +4,20 @@ let indice = 1;
 
 muestraSlides(indice);
 
-function avanzaSlide(n){
-    muestraSlides(indice+=n)
+function avanzaSlide(n) {
+    muestraSlides(indice += n)
 }
 
-function posicionSlide (){
-    muestraSlides(indice=n)
+function posicionSlide(n) {
+    muestraSlides(indice = n)
 }
 
-setInterval(function tiempo(){
+setInterval(function tiempo() {
     muestraSlides(indice += 1)
-}, 3000);
+}, 6000);
 
 
-function muestraSlides(n){
+function muestraSlides(n) {
     let i;
     let slides = document.getElementsByClassName('miSlider');
     let barras = document.getElementsByClassName('barra');
