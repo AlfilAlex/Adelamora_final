@@ -6,16 +6,24 @@ muestraSlides(indice);
 
 function avanzaSlide(n) {
     muestraSlides(indice += n)
+    timeReset()
 }
 
 function posicionSlide(n) {
     muestraSlides(indice = n)
+    timeReset()
 }
 
-setInterval(function tiempo() {
+let timer = setInterval(function tiempo() {
     muestraSlides(indice += 1)
 }, 6000);
 
+function timeReset() {
+    clearInterval(timer)
+    timer = setInterval(function tiempo() {
+        muestraSlides(indice += 1)
+    }, 6000);
+}
 
 function muestraSlides(n) {
     let i;
