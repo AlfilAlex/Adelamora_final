@@ -6,6 +6,7 @@
 @import url('./styles-index/navbar.css');
 
 
+
 /* ---------------------------------------- */
 /* || SECCION DEL Mensaje */
 /* *** */
@@ -93,8 +94,64 @@
 }
 
 
+/* Cuadro mensaje responsive */
+
+.cuadro__pedido-hidden {
 
 
+    position: fixed;
+    left: 0;
+    bottom: -10px;
+    height: 10%;
+    width: 100%;
+
+    outline: 2px solid rebeccapurple;
+
+    background-color: white;
+    z-index: 99999;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    row-gap: 2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+.uncrouched {
+    bottom: 0px;
+    height: 40%;
+}
+
+.cuadro__pedido-hidden--btnocultar {
+    color: white;
+}
+
+.cuadro__pedido-hidden--btnocultar p {
+    cursor: pointer;
+    font-size: 4vh;
+    color: #e7bd00;
+}
+
+.cuadro__pedido-hidden--chat {
+    background-color: #e2e2e2;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cuadro__pedido-hidden--chat p {
+    flex-basis: 100%;
+    margin-bottom: 2vh;
+}
+
+.hidden {
+    display: none;
+}
 
 /* ---------------------------------------- */
 /* || SECCION DE tarjeta */
